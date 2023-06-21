@@ -1,0 +1,98 @@
+.header-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0 -1px 0 0 #fff;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/home_banner.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.logo {
+    margin-left: 5.5rem;
+    padding-bottom: 8px;
+}
+
+.menu {
+    display: flex;
+    margin-right: 20rem;
+}
+
+.content {
+    font-size: 1.1rem;
+    margin: 1.2rem;
+    cursor: pointer;
+}
+
+.arrow {
+    position: relative;
+    top: 5px;
+    margin-left: 0.3rem;
+}
+
+.price-link {
+    position: relative;
+    top: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.price-link:hover {
+    text-decoration: underline;
+}
+
+.action {
+    display: flex;
+    margin-top: 0.2rem;
+    margin-right: 10rem;
+}
+
+.auth-link {
+    font-size: 1.1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+.trial-btn {
+    font-size: 1.2rem;
+    box-sizing: inherit;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    background-color: var(--btn-bgm-color);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: margin-top 0.2s ease-in-out;
+}
+
+.trial-btn:hover {
+    margin-top: 0.2rem;
+    background-color: #125f9f;
+}
