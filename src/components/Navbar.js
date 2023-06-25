@@ -3,10 +3,9 @@ import { IoIosArrowDown } from 'react-icons/io'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../assets/dukaan_logo.png'
-import hero from '../assets/hero_image.webp'
-import styles from '../styles/Header.module.css'
+import styles from '../styles/Navbar.module.css'
 
-const Header = () => {
+const Navbar = () => {
   return (
     <div className={styles['header-container']}>
       <div className={styles['background-img']}></div>
@@ -52,4 +51,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar

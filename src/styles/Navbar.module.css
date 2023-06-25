@@ -1,7 +1,4 @@
 .header-container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
     box-shadow: 0 -1px 0 0 #fff;
 }
 
@@ -32,12 +29,12 @@
 
 .logo {
     margin-left: 5.5rem;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
 }
 
 .menu {
     display: flex;
-    margin-right: 20rem;
+    margin-right: 18rem;
 }
 
 .content {
@@ -66,7 +63,7 @@
 .action {
     display: flex;
     margin-top: 0.2rem;
-    margin-right: 10rem;
+    margin-right: 7rem;
 }
 
 .auth-link {
@@ -87,12 +84,13 @@
     background-color: var(--btn-bgm-color);
     color: #fff;
     border: none;
-    padding: 12px 20px;
+    border-radius: 4px;
+    padding: 14px 22px;
     cursor: pointer;
     transition: margin-top 0.2s ease-in-out;
 }
 
 .trial-btn:hover {
     margin-top: 0.2rem;
-    background-color: #125f9f;
+    background-color: var(--btn-bgm-hover-color);
 }

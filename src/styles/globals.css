@@ -3,6 +3,7 @@
 :root {
   --primary-color: rgba(0, 0, 0, 0.87);
   --btn-bgm-color: #146eb4;
+  --btn-bgm-hover-color: #125f9f;
 }
 
 html, body {
@@ -10,4 +11,5 @@ html, body {
   padding: 0;
   font-family: 'Archivo', sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
