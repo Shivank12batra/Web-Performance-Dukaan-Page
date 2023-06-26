@@ -1,0 +1,32 @@
+.brands-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 30rem;
+  background-color: #fff;
+}
+
+.brands {
+  display: flex;
+  width: calc(300px * 14);
+  padding: 32px 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--primary-color);
+}
+
+.brand {
+  display: inline-block;
+  width: 20%;
+  vertical-align: middle;
+  animation: scrollImages 20s linear infinite;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 7));
+  }
+}

@@ -14,10 +14,10 @@ const Hero = () => {
           <button className={styles['hero-btn']}>Start 7-day free trial</button> 
           <div className={styles['hero-icons']}>
             <p className=''>Also available on</p>
-            <a>
+            <a href='https://apps.apple.com/in/app/dukaan-create-online-dukan/id1560859298' target='_blank' rel='noopener noreferrer'>
               <Image className={styles['icon-img']} src={apple} alt='apple_icon' width={20} height={20}/>
             </a>
-            <a>
+            <a href='https://play.google.com/store/apps/details?id=com.dukaan.app' target='_blank' rel='noopener noreferrer'>
               <Image className={styles['icon-img']} src={google} alt='google_playstore' width={20} height={20}/>
             </a>
           </div>
