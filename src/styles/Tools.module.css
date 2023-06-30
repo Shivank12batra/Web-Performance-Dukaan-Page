@@ -1,0 +1,6 @@
+.tools-container {
+    background-color: rgba(250,183,59,.1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
