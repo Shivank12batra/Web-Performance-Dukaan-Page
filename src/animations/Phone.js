@@ -24,7 +24,7 @@ const Phone = () => {
     return () => clearInterval(interval);
   }, [rectControls, pathControls]);
   return (
-    <motion.svg width="99" height="159" viewBox="0 0 99 159" fill="none" xmlns="http://www.w3.org/2000/svg" initial={{scale: 1}} animate={rectControls}>
+    <motion.svg width="60" height="127" viewBox="0 0 142 127" fill="none" xmlns="http://www.w3.org/2000/svg" initial={{scale: 1}} animate={rectControls}>
 <rect x="3.5" y="3.5" width="92" height="152" rx="7.5" fill="white" stroke="black" stroke-width="7"/>
 <path d="M31 140H67" stroke="black" stroke-width="7" stroke-linecap="round"/>
 <mask id="path-3-inside-1_1_65" fill="white">

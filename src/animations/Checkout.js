@@ -19,7 +19,7 @@ const Checkout = () => {
   }, [circleControls, pathControls]);
 
   return (
-    <svg width="96" height="70" viewBox="0 0 179 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="70" height="127" viewBox="0 0 177 127" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M3 3L44.2357 12.8404L81 114" stroke="black" strokeWidth="5" strokeLinecap="round" />
       <path d="M58.5 45H90" stroke="black" strokeWidth="5" strokeLinecap="round" />
       <path d="M145.524 44H175L145.025 114H81" stroke="black" strokeWidth="5" strokeLinecap="round" />

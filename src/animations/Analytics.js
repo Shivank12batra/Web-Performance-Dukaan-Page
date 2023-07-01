@@ -2,21 +2,33 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
 const Analytics = () => {
-  const pathControls = useAnimation();
+  const controls = useAnimation();
+
+    const pathVariants = {
+        initial: {
+          pathLength: 1,
+          opacity: 1,
+        },
+        animate: {
+          pathLength: [1, 0, 1],
+          opacity: [1, 0, 1],
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+          },
+        },
+      };
 
   useEffect(() => {
-    const animatePaths = async () => {
-        await pathControls.start({ opacity: 0, transition: { duration: 1 } });
-        await pathControls.start({ opacity: 1, transition: { duration: 1 } });
-    };
+    const interval = setInterval(() => {
+      controls.start("animate");
+    }, 5000); 
 
-    const interval = setInterval(animatePaths,8000);
-
-    return () => clearInterval(interval);    
-  }, [pathControls]);  
+    return () => clearInterval(interval); 
+  }, [controls]);
 
   return (
-    <svg width="60" height="96" viewBox="0 0 109 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="70" height="127" viewBox="0 0 142 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="2.5" y="2.5" width="104" height="72" rx="7.5" fill="#89BEEF" stroke="black" strokeWidth="5" />
         <path d="M27.25 93.4999C49.1307 68.6034 63.0156 68.5 83.4531 93.5" stroke="black" strokeWidth="5" stroke-linecap="round" />
         <motion.path
@@ -24,16 +36,18 @@ const Analytics = () => {
             stroke="black"
             strokeWidth="5"
             strokeLinecap="round"
-            initial={{ opacity: 1 }}
-            animate={pathControls}   
+            variants={pathVariants}
+            initial="initial"
+            animate={controls}   
         />
         <motion.path
             d="M91.1172 43V18C91.1172 17.4477 90.6695 17 90.1172 17H66"
             stroke="black"
             strokeWidth="5"
             strokeLinecap="round"
-            initial={{ opacity: 1 }}
-            animate={pathControls}
+            variants={pathVariants}
+            initial="inital"
+            animate={controls}
         />
     </svg>
   )
