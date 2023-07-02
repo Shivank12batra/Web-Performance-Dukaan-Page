@@ -31,7 +31,7 @@ export const shrinkVariants = {
       scale: 1,
     },
     animate: {
-      scale: [1, 0.8, 1],
+      scale: [1, 0.9, 1],
       transition: {
         duration: 2,
         ease: "easeInOut",
@@ -51,6 +51,19 @@ export const shrinkVariants = {
       },
     },
   };
+
+  export const checkoutVariants = {
+    initial: {
+      scale: 1,
+    },
+    animate: {
+      scale: [1, 0.2, 1],
+      transition: {
+        duration: 2,
+        ease: "easeInOut",
+      },
+    },
+  };
   
 
 export const animatePath = async (initialDelay, controls) => {
@@ -59,7 +72,7 @@ export const animatePath = async (initialDelay, controls) => {
 
     const interval = setInterval(() => {
       controls.start("animate");
-    }, 26000);
+    }, 24000);
 
     return () => clearInterval(interval);
-  };
+};

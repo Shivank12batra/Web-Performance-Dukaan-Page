@@ -1,9 +1,10 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { pathVariants, animatePath } from "./variants";
+
 const Store = () => {
     const controls = useAnimation();
-    const initialDelay = 6000; // Initial delay of 2 seconds
+    const initialDelay = 6000;
 
 
   useEffect(() => {

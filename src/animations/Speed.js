@@ -4,7 +4,7 @@ import { clockVariants, pathVariants, animatePath } from "./variants";
 
 const Speed = () => {
    const pathControls = useAnimation();
-   const initialDelay = 2000; // Initial delay of 2 seconds
+   const initialDelay = 2000;
 
 
   useEffect(() => {

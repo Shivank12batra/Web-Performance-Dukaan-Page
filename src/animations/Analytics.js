@@ -4,8 +4,7 @@ import { pathVariants, animatePath } from "./variants";
 
 const Analytics = () => {
   const controls = useAnimation();
-
-  const initialDelay = 22000; // Initial delay of 2 seconds
+  const initialDelay = 22000;
 
 
   useEffect(() => {

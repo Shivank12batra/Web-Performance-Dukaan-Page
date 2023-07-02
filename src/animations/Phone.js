@@ -4,7 +4,7 @@ import { shrinkVariants, rotateVariants, animatePath } from "./variants";
 
 const Phone = () => {
     const controls = useAnimation();
-    const initialDelay = 18000; // Initial delay of 2 seconds
+    const initialDelay = 18000;
 
 
     useEffect(() => {
