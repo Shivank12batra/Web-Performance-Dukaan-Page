@@ -13,7 +13,7 @@ const Checkout = () => {
       await pathControls.start({ scale: 1 });
     };
 
-    const interval = setInterval(animateIcon, 5000);
+    const interval = setInterval(animateIcon, 24000);
 
     return () => clearInterval(interval); 
   }, [circleControls, pathControls]);

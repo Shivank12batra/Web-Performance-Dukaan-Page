@@ -1,43 +1,14 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import { clockVariants, pathVariants, animatePath } from "./variants";
 
 const Speed = () => {
    const pathControls = useAnimation();
+   const initialDelay = 2000; // Initial delay of 2 seconds
 
-   const clockVariants = {
-    initial: {
-      rotate: 0,
-    },
-    animate: {
-      rotate: [0, 10, 0],
-      transition: {
-        duration: 2,
-        ease: "easeInOut",
-      },
-    },
-  };
-
-   const pathVariants = {
-    initial: {
-      pathLength: 1,
-      opacity: 1,
-    },
-    animate: {
-      pathLength: [1, 0, 1],
-      opacity: [1, 0, 1],
-      transition: {
-        duration: 2,
-        ease: "easeInOut",
-      },
-    },
-  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-        pathControls.start("animate");
-    }, 5000); 
-
-    return () => clearInterval(interval); 
+    animatePath(initialDelay, pathControls)
     }, [pathControls]);
 
   return (

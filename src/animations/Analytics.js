@@ -1,31 +1,16 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import { pathVariants, animatePath } from "./variants";
 
 const Analytics = () => {
   const controls = useAnimation();
 
-    const pathVariants = {
-        initial: {
-          pathLength: 1,
-          opacity: 1,
-        },
-        animate: {
-          pathLength: [1, 0, 1],
-          opacity: [1, 0, 1],
-          transition: {
-            duration: 2,
-            ease: "easeInOut",
-          },
-        },
-      };
+  const initialDelay = 22000; // Initial delay of 2 seconds
+
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      controls.start("animate");
-    }, 5000); 
-
-    return () => clearInterval(interval); 
-  }, [controls]);
+    animatePath(initialDelay, controls)
+    }, [controls]);
 
   return (
     <svg width="70" height="127" viewBox="0 0 142 80" fill="none" xmlns="http://www.w3.org/2000/svg">

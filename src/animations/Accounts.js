@@ -26,7 +26,7 @@ const Accounts = () => {
       animatePaths();
       animateCircle();
       animateLines();
-    }, 2000);
+    }, 24000);
 
     return () => clearInterval(interval);
   }, [pathControls, circleControls, lineControls]);
@@ -80,7 +80,7 @@ const Accounts = () => {
         animate={lineControls}
         transition={{ duration: 0.1 }}
       />
-            <motion.path
+      <motion.path
         d="M126 86.5H203"
         stroke="black"
         strokeWidth="5"
