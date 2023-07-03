@@ -64,6 +64,19 @@ export const shrinkVariants = {
       },
     },
   };
+
+  export const accountVariants = {
+    initial : {
+      opacity: 1
+    },
+    animate: {
+      opacity: [1, 0, 1],
+      transition: {
+        duration: 2,
+        ease: "easeInOut",
+      }
+    }
+  }
   
 
 export const animatePath = async (initialDelay, controls) => {
