@@ -1,0 +1,65 @@
+.themes-container {
+    min-height: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.themes-header {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.themes {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.theme {
+    height: auto;
+    width: auto;
+    list-style: none;
+}
+
+.theme img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(26,24,30,.06);
+}
+
+.theme h3 {
+    text-align: left;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+    
+}
+
+.themes-btn {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-sizing: inherit;
+    border: none;
+    margin: 2rem auto;
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.themes-btn:hover {
+    transform: translateY(-0.1rem);
+}
