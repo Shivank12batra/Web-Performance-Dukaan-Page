@@ -7,7 +7,9 @@ import styles from '../styles/Features.module.css'
 const Features = () => {
   return (
     <div className={styles['features-container']}>
-        <h2 className={styles['features-header']}>Be it a startup or a legacy business, here&rsquo;s why you need Dukaan</h2>
+        <h2 className={styles['features-header']}>
+          Be it a startup or a legacy business, here&rsquo;s why you need Dukaan
+        </h2>
         <div className={styles['features']}>
           <div className={styles['feature-container']}>
             <div className={styles['feature-img']}>

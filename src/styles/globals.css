@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: rgba(0, 0, 0, 0.87);
+  --text-color: #4d4d4d;
   --btn-bgm-color: #146eb4;
   --btn-bgm-hover-color: #125f9f;
 }
