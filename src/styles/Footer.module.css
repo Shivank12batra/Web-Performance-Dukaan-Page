@@ -28,7 +28,7 @@
 .footer-links-container:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -2%;
     left: 50%;
     width: 90%;
     height: 1px;
@@ -44,7 +44,6 @@
 
 .footer-links li {
     font-size: 1.1rem;
-    /* font-weight: 600; */
     margin: 0.8rem;
 }
 
@@ -56,9 +55,11 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
-    /* margin: 2rem  0 auto; */
-    /* display: flex; */
-    /* justify-content: space-evenly; */
+}
+
+.company-rights-section p {
+    max-width: 40%;
+    text-align: center;
 }
 
 .flag-section {
@@ -69,4 +70,78 @@
     margin-left: 0.2rem;
     position: relative;
     top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-logo {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .footer-links-container {
+        flex-direction: column;
+        margin-left: 4rem;
+        justify-content: center;
+    }
+    .footer-links {
+        margin: 0;
+    }
+    .footer-links li {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-container {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        order: 1;
+    }
+
+    .footer-links-container {
+        position: relative;
+        flex-direction: row;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-left: 0;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .footer-links li {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .footer-links-container:after {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .footer-logo {
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    .company-rights-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .company-rights-section p {
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .flag-section {
+        margin-top: 0;
+    }
 }
