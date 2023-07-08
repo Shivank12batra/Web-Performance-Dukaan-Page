@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import hero from '../assets/hero_image.webp'
-import apple from '../assets/apple_icon.svg'
-import google from '../assets/playstore_icon.svg'
+import hero from '../assets/banners/hero_image.webp'
+import apple from '../assets/icons/apple_icon.svg'
+import google from '../assets/icons/playstore_icon.svg'
 import styles from '../styles/Hero.module.css'
 
 const Hero = () => {

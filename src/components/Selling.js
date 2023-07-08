@@ -1,5 +1,5 @@
 import Image from "next/image"
-import dark_dukaan_logo from '../assets/dark_dukaan_logo.svg'
+import dark_dukaan_logo from '../assets/logos/dark_dukaan_logo.svg'
 import styles from '../styles/Selling.module.css'
 
 const Selling = () => {

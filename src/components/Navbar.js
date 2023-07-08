@@ -2,7 +2,7 @@ import React from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../assets/dukaan_logo.png'
+import logo from '../assets/logos/dukaan_logo.png'
 import styles from '../styles/Navbar.module.css'
 
 const Navbar = () => {

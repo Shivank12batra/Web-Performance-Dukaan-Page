@@ -10,7 +10,7 @@
     margin: 5rem auto;
     border-radius: 8px;
     color: var(--primary-color);
-    background-image: url('../assets/selling_online.webp');
+    background-image: url('../assets/banners/selling_online.webp');
 }
 
 .content {

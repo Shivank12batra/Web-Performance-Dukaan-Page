@@ -1,0 +1,72 @@
+.footer-container {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 500;
+}
+
+.section-container {
+    position: relative;
+    margin-top: 10rem;
+    display: flex;
+}
+
+.footer-logo {
+    width: 30%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links-container {
+    margin-top: 3rem;
+    margin-right: 8rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 90%;
+    height: 1px;
+    background-color: var(--text-color); 
+    margin-left: -45%; 
+  }
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links li {
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+    margin: 0.8rem;
+}
+
+.company-rights-section {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    /* margin: 2rem  0 auto; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.flag-section {
+    margin-top: 1rem;
+}
+
+.flag {
+    margin-left: 0.2rem;
+    position: relative;
+    top: 5%;
+}

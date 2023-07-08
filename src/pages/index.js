@@ -6,6 +6,7 @@ import Tools from '@/components/Tools'
 import Themes from '@/components/Themes'
 import Blogs from '@/components/Blogs'
 import Selling from '@/components/Selling'
+import Footer from '@/components/Footer'
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
        <Themes/>
        <Blogs/>
        <Selling/>
+       <Footer/>
     </div>
   )
 }
