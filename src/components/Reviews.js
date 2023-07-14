@@ -16,7 +16,7 @@ const Reviews = () => {
                 const {id, brandImg, title, description, ownerImg, owner, position} = review
                 return (
                     <li key={id} className={styles.review}>
-                        <Image className={styles['brand-img']} src={brandImg} alt="brand_img" width={100} height={100}/>
+                        <Image className={`${owner === 'Sambuddha Bhattacharya' ? styles.lemonade : ''} ${styles['brandImg']}`} src={brandImg} alt="brand_img" width={100} height={100}/>
                         <h3 className={styles['review-header']}>{title}</h3>
                         <div className={styles['review-info-container']}>
                             <p className={styles['review-info']}>{description}</p>
