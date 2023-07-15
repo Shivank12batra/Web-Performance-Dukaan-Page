@@ -6,7 +6,7 @@
 }
 
 .themes-header {
-    margin: 2rem 0;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -63,3 +63,28 @@
 .themes-btn:hover {
     transform: translateY(-0.1rem);
 }
+
+@media screen and (max-width: 628px) {
+    .themes-header {
+        max-width: 70%;
+    }
+    .themes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .theme h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .themes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .themes-btn {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+    .theme h3 {
+        text-align: center;
+    }
+} 

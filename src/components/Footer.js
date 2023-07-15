@@ -13,38 +13,175 @@ const Footer = () => {
             </div>
             <div className={styles['footer-links-container']}>
                 <ul className={styles['footer-links']}>
-                    <li>Business tools</li>
-                    <li>Dukaan finder</li>
-                    <li>Dukaan for PC</li>
-                    <li>Dukaan delivery</li>
-                    <li>Dukaan plugins</li>
-                    <li>Dukaan themes</li>
-                    <li>Dukaan enterprise</li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Business Tools
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Dukaan Finder
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Dukaan For PC
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Dukaan delivery
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Dukaan plugins
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Dukaan themes
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                            <a>
+                                Dukaan enterprise
+                            </a>
+                        </Link>
+                    </li>
                 </ul>
                 <ul className={styles['footer-links']}>
-                    <li>Awards 22</li>
-                    <li>Help center</li>
-                    <li>Blog</li>
-                    <li>Banned items</li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Awards 22
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Help center
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Blog
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Banned items
+                        </a>
+                        </Link>
+                    </li>
                 </ul>
                 <ul className={styles['footer-links']}>
-                    <li>About</li>
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                    <li>Contact</li>
-                    <li>FAQs</li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            About
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Privacy
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Terms
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Contact
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            FAQs
+                        </a>
+                        </Link>
+                    </li>
                 </ul>
                 <ul className={styles['footer-links']}>
-                    <li>Jobs</li>
-                    <li>Branding</li>
-                    <li>Branding</li>
-                    <li>Press inquiry</li>
-                    <li>Bug bounty</li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Jobs
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Branding
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Press inquiry
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Bug bounty
+                        </a>
+                        </Link>
+                    </li>
                 </ul>
                 <ul className={styles['footer-links']}>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Linkedin</li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Facebook
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Twitter
+                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/" legacyBehavior>
+                        <a>
+                            Linkedin
+                        </a>
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </section>

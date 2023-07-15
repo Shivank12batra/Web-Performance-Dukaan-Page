@@ -26,10 +26,7 @@
 }
 
 .reviews-carousel {
-    /* width: calc(500px * 5); */
     width: 80%;
-    /* height: 25rem; */
-    /* border: 2px solid red; */
     display: flex;
     overflow: hidden;
     padding: 4px 8px;
@@ -39,17 +36,13 @@
 }
 
 .review {
-    /* border: 2px solid red; */
     list-style: none;
     flex: 0 0 45%;
-    /* width: 40%; */
     min-height: 25rem;
     overflow-x: hidden;
     box-shadow: 0 4px 12px rgba(26, 24, 30, 0.1);
     padding: 12px 20px;
-    /* transform: translate(-320%); */
     animation: slider 20s ease-in-out infinite;
-    /* transition: transform 2s ease-in-out; */
 }
 
 @keyframes slider {
@@ -140,28 +133,28 @@
           transform: translateX(0%);
         }
         10% {
-          transform: translateX(-115%);
+          transform: translateX(-100%);
         }
         20% {
-          transform: translateX(-115%);
+          transform: translateX(-100%);
         }
         30% {
-          transform: translateX(-230%);
+          transform: translateX(-200%);
         }
         40% {
-          transform: translateX(-230%);
+          transform: translateX(-200%);
         }
         50% {
-          transform: translateX(-345%);
+          transform: translateX(-300%);
         }
         60% {
-          transform: translateX(-345%);
+          transform: translateX(-300%);
         }
         70% {
-          transform: translateX(-460%);
+          transform: translateX(-400%);
         }
         80% {
-          transform: translateX(-460%);
+          transform: translateX(-400%);
         }
         90% {
           transform: translateX(0%);
@@ -171,14 +164,12 @@
         }
     }
     .reviews-carousel {
-        gap: 5rem;
+        width: 100%;
+        gap: 0rem;
     }
     .review {
         flex: 0 0 90%;
-        /* height: auto; */
-        animation: slider 30s ease-in-out infinite;
     }
-
     .review-info-container {
         min-height: 10rem;
     }
@@ -188,12 +179,6 @@
     }
 }
 @media screen and (max-width: 576px) {
-    .reviews-carousel {
-        width: 100%;
-    }
-    .review {
-        flex: 0 0 80%;
-    }
     .review-header {
         font-size: 1.1rem;
     }
@@ -206,5 +191,14 @@
     .name, .position {
         font-size: 0.7rem;
         left: 20%;
+    }
+    .position {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .name, .position {
+        left: 25%;
     }
 }
