@@ -1,4 +1,5 @@
 .blogs-container {
+    background-color: #fafafa;
     margin-top: 5rem;
     min-height: 30rem;
     display: flex;
@@ -7,7 +8,7 @@
 }
 
 .blogs-header {
-    margin: 0 auto;
+    margin: 2rem auto;
     font-size: 2.1rem;
     font-weight: 700;
     color: var(--primary-color);

@@ -9,9 +9,15 @@ const Hero = () => {
   return (
     <div className={styles['hero-container']}>
         <div className={styles['hero-left']}>
-          <h1 className={styles['hero-header']}>The global commerce platform, built for performance</h1>
-          <p className={styles['hero-content']}>Effortlessly launch a stunning online store, attract and convert more customers.</p>
-          <button className={styles['hero-btn']}>Start 7-day free trial</button> 
+          <h1 className={styles['hero-header']}>
+            Your Global Commerce Partner, Engineered for Peak Performance
+          </h1>
+          <p className={styles['hero-content']}>
+            Effortlessly launch a stunning online store, attract and convert more customers.
+          </p>
+          <button className={styles['hero-btn']}>
+            Start 7-day free trial
+          </button> 
           <div className={styles['hero-icons']}>
             <p className=''>Also available on</p>
             <a href='https://apps.apple.com/in/app/dukaan-create-online-dukan/id1560859298' target='_blank' rel='noopener noreferrer'>
