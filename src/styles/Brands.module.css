@@ -11,13 +11,17 @@
   overflow: hidden;
   white-space: nowrap;
   background-color: var(--primary-color);
+  animation: scrollImages 20s linear infinite;
 }
 
 .brand {
   display: inline-block;
   width: 20%;
   vertical-align: middle;
-  animation: scrollImages 20s linear infinite;
+}
+
+.brands:hover {
+  animation-play-state: paused;
 }
 
 @keyframes scrollImages {
