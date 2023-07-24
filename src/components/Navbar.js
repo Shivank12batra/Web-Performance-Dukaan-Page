@@ -15,6 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     console.log('use effect hook fired!')
     const handleScroll = () => {
+      console.log('scrolleddd')
       if (window.scrollY >= COLOR_CHANGE_THRESHOLD && !navColor) {
         setNavColor(true);
       }

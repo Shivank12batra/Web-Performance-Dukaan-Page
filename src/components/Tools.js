@@ -7,7 +7,6 @@ import Analytics from "@/animations/Analytics";
 import styles from '../styles/Tools.module.css';
 
 const Tools = () => { 
-
   return (
     <div className={styles['tools-container']}>
         <div className={styles['tools-header']}>
