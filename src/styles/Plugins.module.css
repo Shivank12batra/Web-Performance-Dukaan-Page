@@ -75,59 +75,6 @@
 .hide-text {
   display: none;
 }
-  
-  /* Set individual positioning for each image */
-  .plugin:nth-child(1) {
-    margin-top: 80px;
-  }
-  
-  .plugin:nth-child(2) {
-    margin-top: 48px;
-  }
-  
-  .plugin:nth-child(3) {
-    margin-top: 42px;
-  }
-  
-  .plugin:nth-child(4) {
-    margin-top: 36px;
-  }
-  
-  .plugin:nth-child(5) {
-    margin-top: 48px;
-  }
-  
-  .plugin:nth-child(6) {
-    margin-top: 54px;
-  }
-  
-  .plugin:nth-child(7) {
-    margin-top: 100px;
-  }
-  
-  .plugin:nth-child(8) {
-    margin-top: 100px;
-  }
-  
-  .plugin:nth-child(9) {
-    margin-top: 70px;
-  }
-  
-  .plugin:nth-child(10) {
-    margin-top: 42px;
-  }
-  
-  .plugin:nth-child(11) {
-    margin-top: 36px;
-  }
-  
-  .plugin:nth-child(12) {
-    margin-top: 54px;
-  }
-  
-  .plugin:nth-child(13) {
-    margin-top: 70px;
-  } 
 
   .plugins-btn {
     display: block;

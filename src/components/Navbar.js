@@ -1,21 +1,24 @@
 import {useState, useEffect} from 'react'
-import { IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import { GrMenu } from "react-icons/gr"
 import {FaTimes} from "react-icons/fa"
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../assets/logos/dukaan_logo.png'
+import { productsData } from '@/utils/navData'
+import { companyData } from '@/utils/navData'
 import styles from '../styles/Navbar.module.css'
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false)
+  const [navDropDown, setNavDropDown] = useState('')
   const [navColor, setNavColor] = useState(false)
-  const COLOR_CHANGE_THRESHOLD = 90;
+  const COLOR_CHANGE_THRESHOLD = 90
 
   useEffect(() => {
     console.log('use effect hook fired!')
     const handleScroll = () => {
-      console.log('scrolleddd')
+      console.log('scroll')
       if (window.scrollY >= COLOR_CHANGE_THRESHOLD && !navColor) {
         setNavColor(true);
       }
@@ -34,7 +37,10 @@ const Navbar = () => {
 
   
   return (
-    <div className={styles['header-container']}>
+    <div className={styles['header-container']} onMouseLeave={() => {
+      setNavDropDown('')
+      setNavColor(false)
+      }}>
       <div className={styles['background-img']}></div>
       <nav className={`${navColor ? styles['nav-scroll'] : ''} ${styles['nav-container']}`}>
         <div className={styles.logo}>
@@ -43,16 +49,22 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={styles.menu}>
-          <div className={styles.content}>
+          <div className={styles.content} onMouseEnter={() => {
+            setNavDropDown('Products')
+            setNavColor(true)
+            }}>
             <span>Products</span>
             <span className={styles.arrow}>
-             <IoIosArrowDown/>
+             {navDropDown === 'Products' ? <IoIosArrowUp/> : <IoIosArrowDown/>}
             </span>
           </div>
-          <div className={styles.content}>
+          <div className={styles.content} onMouseEnter={() => {
+            setNavDropDown('Company')
+            setNavColor(true)
+            }}>
             <span>Company</span>
             <span className={styles.arrow}>
-             <IoIosArrowDown/>
+             {navDropDown === 'Company' ? <IoIosArrowUp/> : <IoIosArrowDown/>}
             </span>
           </div>
           <div className={styles.content}>
@@ -77,6 +89,39 @@ const Navbar = () => {
           {navOpen ? <FaTimes size={25}/> : <GrMenu size={25}/>}
         </div>
       </nav>
+      {navDropDown !== '' ?
+      <div className={styles['nav-dropdown-container']}>
+        {navDropDown === 'Products' ?
+        <div className={styles['nav-dropdown']}>
+          {productsData.map(product => {
+            const {id, image_url, header, description} = product
+            return (
+              <div key={id} className={styles.dropdown}>
+                <Image src={image_url} alt={header} height={30} width={30}/>
+                <div className={styles['dropdown-content']}>
+                  <p>{header}</p>
+                  <span>{description}</span>
+                </div>
+              </div>
+            )
+          })}
+        </div> : 
+        <div className={styles['nav-dropdown']}>
+          {companyData.map(data => {
+            const {id, image_url, header, description} = data
+            return (
+              <div key={id} className={styles.dropdown}>
+                <Image src={image_url} alt={header} height={30} width={30}/>
+                <div className={styles['dropdown-content']}>
+                  <p>{header}</p>
+                  <span>{description}</span>
+                </div>
+              </div>
+            )
+          })}
+        </div>}
+        </div> :
+         null}
     </div>
   )
 }

@@ -109,6 +109,48 @@
     cursor: pointer;
 }
 
+.nav-dropdown-container {
+    padding: 3rem 0;
+    position: fixed;
+    top: 10%;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.nav-dropdown {
+    margin-top: 40rem;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+}
+
+.nav-dropdown p {
+    margin-top: 0.2rem;
+}
+
+.dropdown {
+    display: flex;
+}
+
+.dropdown-content {
+    margin-left: 1rem;
+}
+
+.dropdown-content p {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.dropdown-content span {
+    font-size: 0.9rem;
+    color: var(--text-color)
+}
+
 @media screen and (max-width: 728px) {
     .logo {
         margin-left: 0;
