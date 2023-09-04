@@ -42,10 +42,41 @@ const Navbar = () => {
       setNavColor(false)
       }}>
       <div className={styles['background-img']}></div>
+      {navOpen ? 
+      (<div className={styles['nav-open']}>
+        <div className={styles['nav-open-content']}>
+          <p>Products {navDropDown === 'Products'  ? <IoIosArrowUp className={styles.arrow} onClick={() => setNavDropDown('')}/> : <IoIosArrowDown className={styles.arrow} onClick={() => setNavDropDown('Products')}/>}</p>
+          <div className={`${navDropDown === 'Products' ? styles['dropdown-open'] : styles['dropdown-close']}`}>
+            {productsData.map(product => {
+              const {id, image_url, header} = product
+              return (
+                <div key={id} className={styles['dropdown']}>
+                  <Image src={image_url} alt={header} width={20} height={20}/>
+                  <span>{header}</span>
+                </div>
+              )
+            })}
+          </div>
+          <p>Company {navDropDown === 'Company'  ? <IoIosArrowUp className={styles.arrow} onClick={() => setNavDropDown('')}/> : <IoIosArrowDown className={styles.arrow} onClick={() => setNavDropDown('Company')}/>}</p>
+          <div className={`${navDropDown === 'Company' ? styles['dropdown-open'] : styles['dropdown-close']}`}>
+            {companyData.map(data => {
+              const {id, image_url, header} = data
+              return (
+                <div key={id} className={styles['dropdown']}>
+                  <Image src={image_url} alt={header} width={20} height={20}/>
+                  <span>{header}</span>
+                </div>
+              )
+            })}
+          </div>
+          <p>Pricing</p>
+        </div>
+      </div>) :
+       null}
       <nav className={`${navColor ? styles['nav-scroll'] : ''} ${styles['nav-container']}`}>
         <div className={styles.logo}>
           <Link href='/'>
-              <Image src={logo} alt='dukaan' width={160} height={52}/>
+              <Image src={logo} alt='dukaan' width={150} height={52}/>
           </Link>
         </div>
         <div className={styles.menu}>

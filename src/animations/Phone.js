@@ -12,7 +12,7 @@ const Phone = () => {
       }, [controls]);
 
   return (
-    <motion.svg width="60" height="127" viewBox="0 0 142 127" fill="none" xmlns="http://www.w3.org/2000/svg" variants={shrinkVariants} initial="initial" animate={controls}>
+    <motion.svg width="60" height="127" viewBox="-20 0 142 127" fill="none" xmlns="http://www.w3.org/2000/svg" variants={shrinkVariants} initial="initial" animate={controls}>
       <rect x="3.5" y="3.5" width="92" height="152" rx="7.5" fill="white" stroke="black" stroke-width="7"/>
       <path d="M31 140H67" stroke="black" stroke-width="7" stroke-linecap="round"/>
       <mask id="path-3-inside-1_1_65" fill="white">

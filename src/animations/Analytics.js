@@ -12,7 +12,7 @@ const Analytics = () => {
     }, [controls]);
 
   return (
-    <svg width="70" height="127" viewBox="0 0 142 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="70" height="127" viewBox="-16 0 142 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="2.5" y="2.5" width="104" height="72" rx="7.5" fill="#89BEEF" stroke="black" strokeWidth="5" />
         <path d="M27.25 93.4999C49.1307 68.6034 63.0156 68.5 83.4531 93.5" stroke="black" strokeWidth="5" stroke-linecap="round" />
         <motion.path

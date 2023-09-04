@@ -20,7 +20,11 @@ const Plugins = () => {
         {pluginsData.map(plugin => {
           const {id, img_src, img_text} = plugin
           return (
-            <li  key={id} className={styles.plugin} onMouseEnter={() => setShowText(img_text)}
+            <li  key={id} className={styles.plugin} onMouseOver={(e) =>  {
+              console.log(e.target)
+              console.log(e.currentTarget)
+              setShowText(img_text)
+            }}
             onMouseLeave={() => setShowText('')}>
               <div className={`${showText === img_text ? styles['plugin-text'] : styles['hide-text']}`}>
                 {img_text}
