@@ -191,6 +191,25 @@
   .plugin:nth-last-child(-n+3) {
   display: none;
 }
+.plugin:nth-child(5) {
+  animation: fadeIn 0.7s ease-in-out 0.1s forwards;
+}
+.plugin:nth-child(6) {
+  margin-top: 24px;
+  animation: fadeIn 0.7s ease-in-out 0.2s forwards;
+}
+.plugin:nth-child(7) {
+  margin-top: 48px;
+  animation: fadeIn 0.7s ease-in-out 0.3s forwards;
+}
+.plugin:nth-child(8) {
+  margin-top: 48px;
+  animation: fadeIn 0.7s ease-in-out 0.4s forwards;
+}
+.plugin:nth-child(9) {
+  margin-top: 24px;
+  animation: fadeIn 0.7s ease-in-out 0.5s forwards;
+}
 .plugin img {
   width: 40px;
   height: 40px;
