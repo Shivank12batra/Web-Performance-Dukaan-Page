@@ -6,10 +6,6 @@ import { useState } from 'react'
 const Plugins = () => {
   const [showText, setShowText] = useState(false)
 
-  const imageHoverHandler = () => {
-
-  }
-
   return (
     <div className={styles['plugins-container']}>
       <div className={styles['plugins-header']}>

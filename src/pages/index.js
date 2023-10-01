@@ -5,6 +5,7 @@ import Features from '@/components/Features'
 import Tools from '@/components/Tools'
 import Themes from '@/components/Themes'
 import Plugins from '@/components/Plugins'
+import Globe from '@/components/Globe'
 import Blogs from '@/components/Blogs'
 import Reviews from '@/components/Reviews'
 import Selling from '@/components/Selling'
@@ -20,6 +21,7 @@ const Index = () => {
        <Tools/>
        <Themes/>
        <Plugins/>
+       <Globe/>
        <Reviews/>
        <Blogs/>
        <Selling/>
